@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+		<TargetFrameworks>netstandard2.0;net462</TargetFrameworks>
+    <AssemblyName>Nettolicious.Common.Logging.NLog</AssemblyName>
+    <RootNamespace>Nettolicious.Common.Logging.NLog</RootNamespace>
+		<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+		<Authors>Nettolicious</Authors>
+		<Company>Nettolicious</Company>
+		<Description>Nettolicious.Common.Logging.ILogger implementation using NLog</Description>
+		<Copyright>Copyright Nettolicious</Copyright>
+  </PropertyGroup>
+
+	<ItemGroup>
+		<Compile Include="..\Build\CommonAssemblyInfo.cs">
+			<Link>Properties\CommonAssemblyInfo.cs</Link>
+		</Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Nettolicious.Common" Version="2.1.1" />
+	</ItemGroup>
+
+	<ItemGroup Condition="'$(TargetFramework)' == 'netstandard2.0' ">
+		<PackageReference Include="NLog" Version="5.0.0-beta10" />
+	</ItemGroup>
+
+	<ItemGroup Condition="'$(TargetFramework)' == 'net462'">
+		<PackageReference Include="NLog" Version="4.4.12" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\Common\Common.csproj" />
+	</ItemGroup>
+</Project>

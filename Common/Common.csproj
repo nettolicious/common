@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+		<TargetFrameworks>netstandard2.0;net462</TargetFrameworks>
+    <AssemblyName>Nettolicious.Common</AssemblyName>
+    <RootNamespace>Nettolicious.Common</RootNamespace>
+		<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <Authors>Nettolicious</Authors>
+    <Company>Nettolicious</Company>
+    <Description>Common Utilities &amp; Extensions</Description>
+    <Copyright>Nettolicious</Copyright>
+  </PropertyGroup>
+
+	<ItemGroup>
+		<Compile Include="..\Build\CommonAssemblyInfo.cs">
+			<Link>Properties\CommonAssemblyInfo.cs</Link>
+		</Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <PackageReference Include="System.ValueTuple" Version="4.4.0" />
+	</ItemGroup>
+	
+</Project>

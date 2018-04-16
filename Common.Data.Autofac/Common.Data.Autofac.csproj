@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+		<TargetFrameworks>netstandard2.0;net462</TargetFrameworks>
+		<AssemblyName>Nettolicious.Common.Data.Autofac</AssemblyName>
+		<RootNamespace>Nettolicious.Common.Data.Autofac</RootNamespace>
+		<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+		<Authors>Nettolicious</Authors>
+		<Company>Nettolicious</Company>
+		<Description>Autofac configuration for Nettolicious.Common.Data</Description>
+		<Copyright>Copyright Nettolicious</Copyright>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Compile Include="..\Build\CommonAssemblyInfo.cs">
+			<Link>Properties\CommonAssemblyInfo.cs</Link>
+		</Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Autofac" Version="4.7.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\Common.Data\Common.Data.csproj" />
+	  <ProjectReference Include="..\Common\Common.csproj" />
+	</ItemGroup>
+
+</Project>
