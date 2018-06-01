@@ -23,8 +23,7 @@ namespace Nettolicious.Common.Extensions
 
 		public static bool IsCritical(this Exception ex)
 		{
-			if (ex is NullReferenceException || ex is OutOfMemoryException || ex is StackOverflowException || ex is AccessViolationException || ex is ThreadAbortException
-										|| ex is IndexOutOfRangeException)
+			if (ex is OutOfMemoryException || ex is StackOverflowException || ex is AccessViolationException)
 			{
 				return true;
 			}
