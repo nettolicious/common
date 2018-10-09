@@ -65,10 +65,10 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Autofac">
-      <Version>4.7.0</Version>
+      <Version>4.8.1</Version>
     </PackageReference>
     <PackageReference Include="NLog">
-      <Version>5.0.0-beta10</Version>
+      <Version>4.5.10</Version>
     </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

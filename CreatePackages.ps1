@@ -19,11 +19,11 @@ function PublishCorePackage([Parameter(Mandatory = $true)][string]$Project, [Par
     $args = @(".\$($Project).csproj", "/t:pack", "/p:Configuration=Release;PackageVersion=$($version)")
     & $MSBUILD $args
     $packageName = "$($Name).$($version).nupkg"
-    # $distPath = Join-Path -Path $REPO -ChildPath $packageName
-    # if (Test-Path $distPath) {
-    #     Remove-Item $distPath
-    # }
-    #Move-Item ".\bin\Release\$($packageName)" $REPO
+    $distPath = Join-Path -Path $REPO -ChildPath $packageName
+    if (Test-Path $distPath) {
+        Remove-Item $distPath
+    }
+    Move-Item ".\bin\Release\$($packageName)" $REPO
     Set-Location -Path ..
 }
 
