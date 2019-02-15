@@ -50,7 +50,7 @@ Write-Host "Creating NuGet packages with version $($Version)"
 [string]$global:NUGET = "C:\Program Files (x86)\NuGet\bin\nuget.exe"
 
 PublishCorePackage -Project "Common" -Name "Nettolicious.Common" -AssemblyDir ".\bin\Release\netstandard2.0"
-PublishCorePackage -Project "Common.AspNetCore" -Name "Nettolicious.Common.AspNetCore" -AssemblyDir ".\bin\Release\netcoreapp2.0"
+PublishCorePackage -Project "Common.AspNetCore" -Name "Nettolicious.Common.AspNetCore" -AssemblyDir ".\bin\Release\netcoreapp2.1"
 PublishCorePackage -Project "Common.Data" -Name "Nettolicious.Common.Data" -AssemblyDir ".\bin\Release\netstandard2.0"
 PublishCorePackage -Project "Common.Data.Autofac" -Name "Nettolicious.Common.Data.Autofac" -AssemblyDir ".\bin\Release\netstandard2.0"
 PublishCorePackage -Project "Common.Logging.NLog" -Name "Nettolicious.Common.Logging.NLog" -AssemblyDir ".\bin\Release\netstandard2.0"
