@@ -1,7 +1,7 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-		<TargetFrameworks>netstandard2.0;net462</TargetFrameworks>
+		<TargetFrameworks>netstandard2.0</TargetFrameworks>
 		<AssemblyName>Nettolicious.Common.Data.Autofac</AssemblyName>
 		<RootNamespace>Nettolicious.Common.Data.Autofac</RootNamespace>
 		<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
@@ -18,7 +18,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Autofac" Version="4.8.1" />
+		<PackageReference Include="Autofac" Version="4.9.4" />
 	</ItemGroup>
 
 	<ItemGroup>
